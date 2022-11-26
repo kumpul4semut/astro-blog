@@ -2,23 +2,41 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Body from "../components/Body.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import Hero from "../components/Hero.astro";
+import { IoArrowForward } from 'react-icons/io5/index.js'
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <body class="bg-blue-200">
-    <div class="container mx-auto">
-      <Header title={SITE_TITLE} />
-      <main class="bg-red-500">
-        <h1></h1>
-      </main>
-      <!-- <Footer /> -->
-    </div>
-    <script>
-    </script>
-  </body>
+  <Body>
+    <Header title={SITE_TITLE} />
+    <Hero />
+    <section class="mx-auto max-w-3xl">
+      <h1 class="font-mplus font-bold text-xl my-4 decoration-zinc-400 dark:decoration-zinc-700 decoration-4">Artikel terbaru?</h1>
+      <div class="grid gap-3 grid-cols-3">
+        <div class="bg-zinc-600 h-40 w-full rounded-lg"></div>
+        <div class="bg-zinc-600 h-40 w-full rounded-lg"></div>
+        <div class="bg-zinc-600 h-40 w-full rounded-lg"></div>
+        <div class="bg-zinc-600 h-40 w-full rounded-lg"></div>
+        <div class="bg-zinc-600 h-40 w-full rounded-lg"></div>
+        <div class="bg-zinc-600 h-40 w-full rounded-lg"></div>
+      </div>
+    </section>
+    <section class="mx-auto max-w-3xl">
+      <h1 class="font-mplus font-bold text-xl my-4 decoration-zinc-400 dark:decoration-zinc-700 decoration-4">Video terbaru?</h1>
+      <div class="grid gap-3 grid-cols-3">
+        <div class="bg-zinc-600 h-40 w-full rounded-lg"></div>
+        <div class="bg-zinc-600 h-40 w-full rounded-lg"></div>
+        <div class="bg-zinc-600 h-40 w-full rounded-lg"></div>
+        <div class="bg-zinc-600 h-40 w-full rounded-lg"></div>
+        <div class="bg-zinc-600 h-40 w-full rounded-lg"></div>
+        <div class="bg-zinc-600 h-40 w-full rounded-lg"></div>
+      </div>
+    </section>
+  </Body>
 </html>

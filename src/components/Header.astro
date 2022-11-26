@@ -1,14 +1,25 @@
 ---
-import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../config';
+import HeaderLink from "./HeaderLink.astro";
+import AntLogo from "./icons/AntLogo";
+import ThemeToggle from './ThemeToggleButton'
 ---
 
-<header class="flex flex-row justify-between p-5 sm:static fixed bg-white w-full left-0 bottom-0">
-	<h2 class="text-violet font-bold">
-		{SITE_TITLE}
-	</h2>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-	</nav>
+<header class="fixed w-full p-2 z-20 backdrop-blur-md">
+  <div class="mx-auto max-w-3xl">
+    <nav class="flex items-center gap-3 text-base">
+      <a href="/" class="group">
+        <h2 class="font-semibold tracking-tighter font-mplus text-lg">
+          <AntLogo />
+        </h2>
+      </a>
+      <div class="items-center gap-6 hidden md:flex">
+        <HeaderLink href="/">Home</HeaderLink>
+        <HeaderLink href="/artikel">Artikel</HeaderLink>
+        <HeaderLink href="/artikel">Video</HeaderLink>
+        <HeaderLink href="/artikel">Produk</HeaderLink>
+      </div>
+      <div class="flex-1"></div>
+      <ThemeToggle client:visible />
+    </nav>
+  </div>
 </header>
