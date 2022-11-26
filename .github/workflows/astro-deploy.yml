@@ -27,6 +27,9 @@
             cache: 'npm'
 
         # Not using npm? Change `npm ci` to `yarn install` or `pnpm i`
+        - name: remove node_module
+          run: rm -rf node_module
+          
         - name: Install dependencies
           run: yarn install
 
