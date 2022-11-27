@@ -1,9 +1,15 @@
 ---
 layout: "../../layouts/BlogPost.astro"
-title: "Markdown Style Guide"
+title: "Tutorial Membuat REST API dengan Express, Typescript, dan PostgreSQL"
+slug:
 description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
-pubDate: "Jul 01 2022"
-heroImage: "/placeholder-hero.jpg"
+pubDate: "27 juli 2022"
+tags:
+ - PHP
+ - HTML
+ - CSS
+ - CODEIGNITER
+heroImage: "/tailwind-image-zoom.png"
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
@@ -50,6 +56,14 @@ The blockquote element represents content that is quoted from another source, op
 | Italics   | Bold     | Code   |
 | --------  | -------- | ------ |
 | *italics* | **bold** | `code` |
+
+
+
+```javascript
+const name = "jujun jamaludin"
+console.log(name)
+```
+
 
 ## Code Blocks
 
