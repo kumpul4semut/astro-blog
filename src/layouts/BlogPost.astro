@@ -27,7 +27,7 @@ const {
   <Body>
     <Header />
     <section class="mx-auto max-w-3xl pt-20 prose">
-      {heroImage && <img src={heroImage} alt="" />}
+      {heroImage && <img src={`${import.meta.env.BASE_URL}${heroImage}`} alt="" />}
       <h1 class="text-3xl bold text-center">{title}</h1>
       {pubDate && <time>{pubDate}</time>}
       {
