@@ -28,7 +28,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 ## Images
 
-![This is a placeholder image description]({{site.baseurl}}/placeholder-social.jpg)
+![This is a placeholder image description](/astro-blog/placeholder-social.jpg)
 
 ## Blockquotes
 
