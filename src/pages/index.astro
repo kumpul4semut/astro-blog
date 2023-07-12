@@ -23,7 +23,7 @@ const posts = (await Astro.glob('./blog/*.{md,mdx}')).sort(
       <div class="grid gap-3 grid-cols-1 md:grid-cols-3">
         {posts.map((post) => (
           <a href={post.url} class="shadow-slate-500 shadow-sm w-full rounded-lg py-2 px-2">
-            {post.frontmatter.heroImage && <img class="rounded-lg" src={post.frontmatter.heroImage} alt="" />}
+            {post.frontmatter.heroImage && <img class="rounded-lg" src={`${import.meta.env.BASE_URL}${post.frontmatter.heroImage}`} alt="" />}
             <h3 class="text-md font-bold mb-2 tracking-tight line-clamp-2 mt-3">{post.frontmatter.title}</h3>
           </a>
         ))}
